@@ -19,43 +19,55 @@ def create_html_string(users, html_string):
     """
     html_string += "</body></html>"
     return html_string
-
+# 1B7AD7
 
 # contains the first part of html code
 html_string = """
     <html>
-        <body style="background-color:FFFAED">
+        <body style="background-color:FFF2F1">
         <style>
             #boxstyle {
                 position: relative;
                 display: inline-block;
-                margin;left:120px;
+                margin;left:80px;
+                margin;top:60px;
+                margin: 20px;
                 padding: 10px;
-                background-color:D7FCD7;
+                border-radius: 100px;
+                background-color:D23E2F;
                 width: 350px;
-                height: 300px;
-                border:5px solid white;
+                height: 370px;
+                border: 1px solid white;
+                box-shadow: 3px 10px 20px #5E241E;
             }
             
             .namestyle {
                 position: static;
                 font-family: Verdana;
-                font-size: 25px;
-                text-align:left;
-                right: 10px
+                font-size: 26px;
+                font-weight:bold;
+                text-align: center;
+                right: 10px;
+                color: white
             }
         
             .infostyle {
                 position: left;
-                font-family: Courier;
-                text-align: left;
-                left: 10px
+                font-family: Verdana;
+                font-size: 17px;
+                text-align: center;
+                left: 10px;
+                color: white
             }
         
             .imagestyle {
                 display: block;
-                align: left;
-                border-radius: 15px;
+                align: center;
+                border-radius: 100px;
+                border: 5px solid white;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
             }
         </style>
 """
