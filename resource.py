@@ -1,5 +1,6 @@
 import requests
 from app import app
+from flask import make_response
 
 
 def rand_user(count):
@@ -9,7 +10,10 @@ def rand_user(count):
 
 @app.route('/randusers/<int:count>', methods=['GET'])
 def get_users(count):
-    return rand_user(count), 200
+    resp = make_response(rand_user(count))
+    resp.headers['Content-Encoding'] = 'utf-8'
+    # resp.headers['Accept-Encoding'] = 'utf-8'
+    return resp, 200
 
 
 @app.route('/', methods=['GET'])
