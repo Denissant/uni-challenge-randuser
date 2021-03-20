@@ -11,8 +11,8 @@ def rand_user(count):
 @app.route('/randusers/<int:count>', methods=['GET'])
 def get_users(count):
     resp = make_response(rand_user(count))
-    resp.headers['Content-Encoding'] = 'utf-8'
-    # resp.headers['Accept-Encoding'] = 'utf-8'
+    resp.headers['Content-Encoding'] = 'unicode, utf8, utf-8'
+    resp.headers['Accept-Encoding'] = 'utf-8'
     return resp, 200
 
 
