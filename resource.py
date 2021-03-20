@@ -9,7 +9,7 @@ def rand_user(count):
 
 @app.route('/randusers/<int:count>', methods=['GET'])
 def get_users(count):
-    return rand_user(count), 200
+    return rand_user(count).decode(encoding="utf-8"), 200
 
 @app.route('/', methods=['GET'])
 def home():
