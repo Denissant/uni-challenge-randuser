@@ -13,4 +13,4 @@ def get_users(count):
 
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1>Welcome</h1> <br> Visit <code>...herokuapp.com/randusers/(count) </code> to receive random user data of the specified count. "
+    return "<h1>Welcome</h1> <br> Visit <code>https://uni-challenge-randuser.herokuapp.com/randusers/(count) </code> to receive random user data of the specified count. Example for 5 users: https://uni-challenge-randuser.herokuapp.com/randusers/5"
