@@ -47,6 +47,8 @@ html_string = """
                 font-size: 26px;
                 font-weight:bold;
                 text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
                 right: 10px;
                 color: white
             }
@@ -56,6 +58,8 @@ html_string = """
                 font-family: Verdana;
                 font-size: 17px;
                 text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
                 left: 10px;
                 color: white
             }
